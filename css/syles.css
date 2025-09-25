@@ -1,0 +1,9 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, Arial, sans-serif; line-height: 1.6; color: #222; }
+.banner img { width: 100%; display: block; max-height: 220px; object-fit: cover; }
+.site-nav { display: flex; gap: 1rem; padding: 0.75rem 1rem; background: #111; }
+.site-nav a { color: #eee; text-decoration: none; padding: 0.4rem 0.6rem; border-radius: 6px; }
+.site-nav a:hover, .site-nav a.active { background: #2b2b2b; }
+.container { max-width: 1000px; margin: 1.5rem auto; padding: 0 1rem; }
+.site-footer { padding: 1rem; text-align: center; background: #f3f3f3; color: #555; }
+@media (max-width: 640px) { .site-nav { flex-wrap: wrap; } }

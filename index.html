@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>HW5 – Home | Oluwafunso Olugbemi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: Arial, sans-serif; margin: 0; }
+
+    /* ===== GLOBAL LAYOUT TABLE (NO BORDERS) ===== */
+    table.layout { width: 100%; border-collapse: collapse; }
+    table.layout td, table.layout th { border: none; vertical-align: top; }
+
+    /* Header */
+    .header { padding: 20px; background: #deeaf6; text-align: center; }
+    .header h1 { margin: 0 0 6px; }
+    .muted { color: #555; font-size: 0.95rem; }
+
+    /* Nav column */
+    .nav { width: 220px; background: #fce4d6; padding: 16px; }
+    .nav a { display: block; margin: 8px 0; text-decoration: none; color: #222; font-weight: 600; }
+    .nav a:hover { text-decoration: underline; }
+
+    /* Content column */
+    .content { padding: 18px; max-width: 1000px; }
+    section { margin: 0 0 28px; padding-bottom: 8px; border-bottom: 1px solid #eee; }
+    section h2, section h3, section h4, section h5, section h6 { margin-top: 0; }
+    .back { display: inline-block; margin-top: 8px; }
+
+    figure { margin: 0; }
+    img { max-width: 100%; height: auto; }
+
+    /* ===== INNER DATA TABLE (WITH BORDERS) ===== */
+    table.data { border-collapse: collapse; margin-top: 10px; }
+    table.data th, table.data td { border: 1px solid #bbb; padding: 8px 10px; }
+    table.data th { background: #d9e1f2; text-align: left; }
+  </style>
+</head>
+<body>
+  <a id="top"></a>
+  <table class="layout">
+    <tr>
+      <td colspan="2" class="header">
+        <h1>Oluwafunso Olugbemi</h1>
+        <div class="muted">
+          <i>Computer Science student and aspiring software engineer</i> —
+          <b>GPA:</b> 3.86 | <b>University:</b> UTSA
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <!-- NAV -->
+      <td class="nav">
+        <strong>Navigation</strong>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </td>
+
+      <!-- CONTENT -->
+      <td class="content">
+        <!-- Intro only on Home -->
+        <section id="intro">
+          <h2>Intro</h2>
+          <p>
+            Hello! My name is Oluwafunso Olugbemi. I'm passionate about technology,
+            problem-solving, and building systems that make an impact. I balance academics,
+            projects, and professional development to keep improving my skills and experiences.
+          </p>
+          <figure>
+            <img src="assets/images/profile.jpg" alt="Oluwafunso profile photo" width="300">
+            <figcaption class="muted">Internal image from <code>assets/images/profile.jpg</code>.</figcaption>
+          </figure>
+          <p class="muted">
+            Helpful resource: <a href="https://developer.mozilla.org/" target="_blank" rel="noopener noreferrer">MDN Web Docs</a>.
+          </p>
+          <a class="back" href="#top">Back to Top ↑</a>
+        </section>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
